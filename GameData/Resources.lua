@@ -28,7 +28,6 @@ local	resources = {
 			laserfalloff		= 'laserfalloff.tga',
 			randdots			= 'randdots.tga',
 			smoketrail			= 'smoketrail.tga',
-			flareprojectiletexture = 'flareprojectiletexture.tga',
 			wake				= 'wake.tga',
 			flare				= 'flare.tga',
 			explo				= 'explo.tga',
