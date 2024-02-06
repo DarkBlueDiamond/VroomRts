@@ -273,6 +273,15 @@ local Sounds = {
 			maxconcurrent = 50, ---only once
 			--maxdist = FLT_MAX, --- only when near
 		},
+		GrenadeExplosion = {			
+			file = "Sounds/Explosions/grenade_explosion.wav",
+			preload, -- put in memory!
+			gain = 1, --- for uber-loudness
+			pitch = 1, --- bass-test
+			priority = 15, --- very high
+			maxconcurrent = 50, ---only once
+			--maxdist = FLT_MAX, --- only when near
+		},
 	},
 	}
 	

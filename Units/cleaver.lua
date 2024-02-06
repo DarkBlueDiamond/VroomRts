@@ -10,7 +10,7 @@ BuildPic = "Cleaver.bmp",
     TEDClass = "Vech",
     UnitName = "Cleaver",
     script = "cleaverscript.lua",
-
+	icontype = "riot",
 --Unit limitations and properties
     Description = "Slow riot unit.",
     MaxDamage = 1175,

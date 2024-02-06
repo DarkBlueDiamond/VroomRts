@@ -24,6 +24,7 @@ return {
       count              = 1,
       ground             = true,
       water              = true,
+	  underwater              = true,
       properties = {
         heat               = 7, --8
         heatfalloff        = 1,
@@ -109,6 +110,7 @@ return {
       count              = 1,
       ground             = true,
       water              = true,
+	  underwater         = true,
       properties = {
         heat               = 6, --8
         heatfalloff        = 1,
@@ -194,6 +196,7 @@ return {
       count              = 1,
       ground             = true,
       water              = true,
+	  underwater         = true,
       properties = {
         heat               = 6, --8
         heatfalloff        = 1,

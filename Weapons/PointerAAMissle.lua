@@ -37,7 +37,6 @@ avoidFeature=false,
 avoidFriendly=true,
 
 
---commandfire=true,
 
 ----DAMAGE
 damage={

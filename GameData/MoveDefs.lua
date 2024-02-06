@@ -33,8 +33,21 @@ local moveDefs 	=	 {
 		name =	"Small Hover",
 		footprintX =	2,
 		footprintZ =	2,
-		maxSlope =	28,
 		speedModClass = 2,
+	},
+	{	
+		name =	"Small Ship",
+		footprintX =	2,
+		footprintZ =	2,
+		minWaterDepth =	3,
+		speedModClass = 3,
+	},
+	{	
+		name =	"Large Ship",
+		footprintX =	3,
+		footprintZ =	3,
+		minWaterDepth =	3,
+		speedModClass = 3,
 	},
 	
 }

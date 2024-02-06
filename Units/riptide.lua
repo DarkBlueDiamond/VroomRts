@@ -1,40 +1,42 @@
-local unitName  =  "picket"
+local unitName  =  "riptide"
 
 local unitDef  =  {
 --Internal settings
-BuildPic = "Picket.bmp",
-    Category = "TANK SMALL NOTAIR NOTSUB",
-    ObjectName = "Picket.s3o",
-    name = "Picket",
+BuildPic = "Riptide.bmp",
+    Category = "TANK SHIP SMALL NOTAIR NOTSUB",
+    ObjectName = "Riptide.s3o",
+    name = "Hunter",
     Side = "Vroomers",
     TEDClass = "Vech",
-    UnitName = "Picket",
-    script = "picketscript.lua",
-	icontype = "skirmisher",
+    UnitName = "Hunter",
+    script = "riptidescript.lua",
+
 --Unit limitations and properties
-    Description = "Skirmisher unit.",
-    MaxDamage = 480,
+    Description = "Anti sub/ship raider unit.",
+    MaxDamage = 400,
     idleTime = 300,
     idleAutoHeal = 5,
     RadarDistance = 0,
-    SightDistance = 450,
+    SightDistance = 560,
     SoundCategory = "TANK",
     Upright = 0,
+	explodeAs = [[SmallExplosion]],
+	selfDestructAs = [[SmallExplosion]],
+   corpse = [[riptide_dead]],
 --Energy and metal related
-    BuildCostEnergy = 120,
-    BuildCostMetal = 120,
-    BuildTime = 120,
+    BuildCostEnergy = 80,
+    BuildCostMetal = 80,
+    BuildTime = 80,
 --Pathfinding and related
-    maxAcc = 0.3,
+    maxAcc = 0.35,
     BrakeRate = 0.1,
     FootprintX = 2,
     FootprintZ = 2,
     MaxSlope = 45,
-    speed = 57,
-    MaxWaterDepth = 5,
-    MovementClass = "Small Vechicle",
-    TurnRate = 1475,
-	corpse = [[picket_dead]],
+    speed = 88,
+    MovementClass = "Small Ship",
+    TurnRate = 2250,
+
     
 --Abilities
     Builder = 0,
@@ -50,24 +52,20 @@ BuildPic = "Picket.bmp",
     
 
 --Hitbox
-collisionVolumeOffsets    =  "0 -3.5 0",
-collisionVolumeScales     =  "15.5 21 36",
+collisionVolumeOffsets    =  "0 -3 0",
+collisionVolumeScales     =  "19 23 42",
 collisionVolumeType       =  "box",
 
    
 --Weapons and related
-   	explodeAs = [[SmallExplosion]],
-	selfDestructAs = [[SmallExplosion]],
+   
     NoChaseCategory = "AIR",
-
-
-
+	
 weapons = {
-[1]={name  = "Rocket",
-       turret = true
+[1]={name  = "RiptideAmphMissle",
+	   onlyTargetCategory = [[TANK]],
 	},
 },
-
 
 
 }

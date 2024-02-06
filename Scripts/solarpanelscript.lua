@@ -60,10 +60,10 @@ StartThread(StopMakeE)
 
 end
 
---function script.HitByWeapon( )
---StartThread(defend)
+function script.HitByWeapon()
+StartThread(defend)
 
---end
+end
 
 
 

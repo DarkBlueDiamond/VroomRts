@@ -10,7 +10,7 @@ BuildPic = "filename.bmp",
     TEDClass = "Vech",
     UnitName = "Commander",
     script = "commanderscript.lua",
-
+	icontype = "commander",
 --Unit limitations and properties
     Description = "Commander, Make sure not to lose it!",
     MaxDamage = 3750,
