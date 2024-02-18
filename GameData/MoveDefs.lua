@@ -43,9 +43,16 @@ local moveDefs 	=	 {
 		speedModClass = 3,
 	},
 	{	
-		name =	"Large Ship",
+		name =	"Medium Ship",
 		footprintX =	3,
 		footprintZ =	3,
+		minWaterDepth =	3,
+		speedModClass = 3,
+	},
+	{	
+		name =	"Large Ship",
+		footprintX =	4,
+		footprintZ =	4,
 		minWaterDepth =	3,
 		speedModClass = 3,
 	},

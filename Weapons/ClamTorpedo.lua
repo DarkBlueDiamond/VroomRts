@@ -1,31 +1,33 @@
-local weaponName="Rocket"
+local weaponName="ClamTorpedo"
 local weaponDef={
-name="Rocket",
-weaponType=[[MissileLauncher]],
+name="Torpedo (Ship/sub oly)",
+weaponType=[[TorpedoLauncher]],
 
 Accuracy = 0,
 
 --Physic/flight path
-range=560,
-reloadtime=3.2,
-weaponVelocity=234.5,
-startVelocity=167.5,
-weaponAcceleration=200,
-flightTime=3.5,
+range=375,
+reloadtime = 6,
+weaponVelocity=300,
+startVelocity=300,
+weaponAcceleration=300,
+flightTime=4,
 BurnBlow=0,
 FixedLauncher=false,
 dance=0,
 wobble=0,
-tracks=false,
-Turnrate=2200,
-collideFriendly=true,
+tracks = true,
+Turnrate= 4000,
+tolerance = 16000,
+collideFriendly = true,
 avoidfriendly 	= true,
+waterWeapon = true,
 soundStart = [[Weapons/Missle]],
 soundHit = [[Weapons/Missle_hit]],
 soundStartVolume = 4,
 soundHitVolume = 4,
-cegTag = [[Rocket_trail]],
-explosionGenerator = [[custom:genericmissleflash]],
+cegTag = [[torpedo_trail]],
+explosionGenerator = [[custom:Torpedomissleflash]],
 ----APPEARANCE
 smokeTrail= false,--uses default trail
 model="Rocket.s3o",
@@ -41,10 +43,9 @@ avoidFriendly=true,
 
 ----DAMAGE
 damage={
-default=185,
-heavyarmor=1,
+default=328,
 },
-areaOfEffect=12,
+areaOfEffect=32,
 craterMult=0,
 
 --?FIXME***

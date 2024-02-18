@@ -23,9 +23,9 @@ BuildPic = "Caretaker.bmp",
     floater = true,
 	corpse = [[caretaker_dead]],
 --Energy and metal related
-    BuildCostEnergy = 175,
-    BuildCostMetal = 175,
-	Buildtime = 175,
+    BuildCostEnergy = 160,
+    BuildCostMetal = 160,
+	Buildtime = 160,
 	
 --Size and Abilites
   MaxSlope = 33,
@@ -50,7 +50,7 @@ ShowNanoSpray = true,
 CanBeAssisted = true,
 workerTime = 10,
 repairSpeed = 6.7,
-buildDistance = 300,
+buildDistance = 450,
 terraformSpeed = 9001,
 
 --Hitbox

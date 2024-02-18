@@ -1,34 +1,38 @@
-local weaponName="Rocket"
+local weaponName="ClamDepthcharges"
 local weaponDef={
-name="Rocket",
-weaponType=[[MissileLauncher]],
+name="Depth Charges (water only)",
+weaponType=[[TorpedoLauncher]],
 
 Accuracy = 0,
 
 --Physic/flight path
-range=560,
-reloadtime=3.2,
-weaponVelocity=234.5,
-startVelocity=167.5,
-weaponAcceleration=200,
-flightTime=3.5,
+range=300,
+reloadtime = 2.5,
+weaponVelocity=300,
+startVelocity=300,
+weaponAcceleration=300,
+flightTime=4,
 BurnBlow=0,
 FixedLauncher=false,
 dance=0,
 wobble=0,
-tracks=false,
-Turnrate=2200,
-collideFriendly=true,
+tracks = true,
+Turnrate= 16000,
+tolerance = 16000,
+collideFriendly = true,
 avoidfriendly 	= true,
+waterWeapon = true,
+subMissile = true,
+burst = 4,
+burstRate = 0.25,
 soundStart = [[Weapons/Missle]],
 soundHit = [[Weapons/Missle_hit]],
 soundStartVolume = 4,
 soundHitVolume = 4,
-cegTag = [[Rocket_trail]],
 explosionGenerator = [[custom:genericmissleflash]],
 ----APPEARANCE
 smokeTrail= false,--uses default trail
-model="Rocket.s3o",
+model="Depthcharge.s3o",
 
 ----TARGETING
 turret=true,
@@ -41,10 +45,9 @@ avoidFriendly=true,
 
 ----DAMAGE
 damage={
-default=185,
-heavyarmor=1,
+default=18,
 },
-areaOfEffect=12,
+areaOfEffect=6,
 craterMult=0,
 
 --?FIXME***

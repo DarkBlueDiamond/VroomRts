@@ -7,7 +7,7 @@ return lowerkeys({
             footprintx = 2,
             smokeTime = 400,
             reclaimable = true,
-            reclaimTime = 30,
+            reclaimTime = 32,
             metal = 32,
             hitdensity = 100,
             world = "All Worlds",

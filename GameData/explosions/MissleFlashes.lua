@@ -301,4 +301,38 @@ return {
             },
         },
 },
+["Torpedomissleflash"] = {
+	usedefaultexplosions = false,
+	underwater              = true,
+    groundflash = {
+      circlealpha        = 1,
+      circlegrowth       = 1,
+      flashalpha         = 0.9,
+      flashsize          = 23.5,
+      ttl                = 12,
+      color = {
+        [1]  = 0.8,
+        [2]  = 0.8,
+        [3]  = 0.4,
+      },
+    },
+	 mainhit = {
+      air                = true,
+      class              = [[heatcloud]],
+      count              = 1,
+      ground             = true,
+      water              = true,
+	  underwater              = true,
+      properties = {
+        heat               = 9, --8
+        heatfalloff        = 1,
+        maxheat            = 9, --8
+        pos                = [[0, 1, 0]],
+        size               = 18, 
+        sizegrowth         = 1.33, 
+        speed              = [[0, 1, 0]],
+        texture            = [[heatcloud]],
+      },
+	},
+	},
 }

@@ -1,39 +1,39 @@
-local unitName  =  "catapult"
+local unitName  =  "archer"
 
 local unitDef  =  {
 --Internal settings
-BuildPic = "Catapult.bmp",
+BuildPic = "Archer.bmp",
     Category = "TANK SHIP SMALL NOTAIR NOTSUB",
-    ObjectName = "Catapult.s3o",
-    name = "Catapult",
+    ObjectName = "Archer.s3o",
+    name = "Archer",
     Side = "Vroomers",
     TEDClass = "Vech",
-    UnitName = "Catapult",
-    script = "catapultscript.lua",
+    UnitName = "Archer",
+    script = "archerscript.lua",
 
 --Unit limitations and properties
     Description = "Fire Support unit.",
-    MaxDamage = 920,
-    idleTime = 300,
-    idleAutoHeal = 2,
+    MaxDamage = 865,
+    idleTime = 0,
+    idleAutoHeal = 0,
     RadarDistance = 0,
-    SightDistance = 480,
+    SightDistance = 550,
     SoundCategory = "TANK",
     Upright = 0,
 	explodeAs = [[MediumExplosion]],
 	selfDestructAs = [[MediumExplosion]],
    corpse = [[catapult_dead]],
 --Energy and metal related
-    BuildCostEnergy = 245,
-    BuildCostMetal = 245,
-    BuildTime = 245,
+    BuildCostEnergy = 200,
+    BuildCostMetal = 200,
+    BuildTime = 200,
 --Pathfinding and related
     maxAcc = 0.35,
     BrakeRate = 0.1,
     FootprintX = 2,
     FootprintZ = 2,
     MaxSlope = 45,
-    speed = 50,
+    speed = 62,
     MovementClass = "Medium Ship",
     TurnRate = 1750,
 
@@ -62,8 +62,17 @@ collisionVolumeType       =  "box",
     NoChaseCategory = "AIR",
 	
 weapons = {
-[1]={name  = "CatapultHighImpluseGrenade",
-	   onlyTargetCategory = [[TANK]],
+[1]={name  = "ArcherAALaser",
+	 onlyTargetCategory = [[AIR]],
+	},
+[2]={name  = "ArcherAAStunLaser",
+	 onlyTargetCategory = [[AIR]],
+	},
+[3]={name  = "ArcherAALaser",
+	 onlyTargetCategory = [[AIR]],
+	},
+[4]={name  = "ArcherAAStunLaser",
+	 onlyTargetCategory = [[AIR]],
 	},
 },
 

@@ -5,10 +5,10 @@ local unitDef  =  {
 BuildPic = "Riptide.bmp",
     Category = "TANK SHIP SMALL NOTAIR NOTSUB",
     ObjectName = "Riptide.s3o",
-    name = "Hunter",
+    name = "Riptide",
     Side = "Vroomers",
     TEDClass = "Vech",
-    UnitName = "Hunter",
+    UnitName = "Riptide",
     script = "riptidescript.lua",
 
 --Unit limitations and properties
@@ -24,9 +24,9 @@ BuildPic = "Riptide.bmp",
 	selfDestructAs = [[SmallExplosion]],
    corpse = [[riptide_dead]],
 --Energy and metal related
-    BuildCostEnergy = 80,
-    BuildCostMetal = 80,
-    BuildTime = 80,
+    BuildCostEnergy = 90,
+    BuildCostMetal = 90,
+    BuildTime = 90,
 --Pathfinding and related
     maxAcc = 0.35,
     BrakeRate = 0.1,
